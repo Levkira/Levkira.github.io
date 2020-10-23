@@ -4,11 +4,16 @@
 
 body {
     margin: 0;
-    background-color: #ececec;
-    color: #000;
+    height: 100vh;
+    /* background-color: #ececec;
+    color: #000; */
 }
 
-.navbar{
+canvas{
+    display: block;
+}
+
+.navbar {
     height: 70px;
     position: fixed;
     top: 0;
@@ -17,7 +22,7 @@ body {
     background-color: #343a40;
 }
 
-.form{
+.form {
     height: 100%;
     display: flex;
     justify-content: space-around;
@@ -25,46 +30,51 @@ body {
 }
 
 .form select {
-    height: 30px;
+    height: 33px;
     color: #495057;
     background-color: #fff;
     background-clip: padding-box;
     border: 1px solid #ced4da;
+    border-radius: 2px;
+    padding: 6px 12px;
 }
 
-.form input{
-    height: 30px;
-    padding: .375rem .75rem;
+.form input {
+    height: 33px;
+    padding: 6px 12px;
     color: #495057;
     background-color: #fff;
     border: 1px solid #ced4da;
+    border-radius: 2px;
 }
 
-.btn{
-    height: 30px;
+.btn {
+    height: 33px;
+    width: 90px;
     color: #28b0b9;
     border-color: #28b0b9;
     background-color: transparent;
     border: 1px solid #28b0b9;
+    border-radius: 2px;
     padding: 6px 12px;
 }
 
-.btn:hover{
+.btn:hover {
     color: #fff;
     background-color: #28b0b9;
     border-color: #28b0b9;
 }
 
-.footer{
+.list {
     position: fixed;
     bottom: 0;
 }
 
-.footer ul {
+.list ul {
     list-style: none;
 }
 
-.footer ul span {
+.list ul span {
     position: absolute;
    left: 400px;
     cursor: pointer;
